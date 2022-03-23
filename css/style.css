@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;600;900&display=swap");
+.main-h5, .main-h4, .main-h3, .main-h2, .side-h3, h1 {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+}
+
+.side-h3, h1 {
+  color: #b7e972;
+  text-align: center;
+}
+
+.main-h5, .main-h4, .main-h3, .main-h2 {
+  color: #161313;
+}
+
+.main-h3, .side-h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  border-top: 5px solid #b7e972;
+  padding-top: 1rem;
+}
+
+ul {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid #b7e972;
+}
+
+li {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #adb2b6;
+  margin-bottom: 0.2rem;
+}
+
+.main-h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  position: relative;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  color: #b7e972;
+  background-color: #161313;
+}
+
+.side-h3 {
+  padding-top: 1rem;
+}
+
+.main-h3 {
+  line-height: 1.6rem;
+}
+
+.side-h4 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #adb2b6;
+  text-align: center;
+}
+
+.main-h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.main-h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.main-text {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #161313;
+  padding-top: 0.5rem;
+}
+
+.content-icon {
+  font-size: 2rem;
+  margin: 0.5rem 0.5rem 0 0;
+}
+.content-icon::before {
+  color: #161313;
+}
+
+#stack-icons, #contact-icons {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  border-bottom: 5px solid #b7e972;
+  padding: 1rem 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #474b4f;
+}
+
+main {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  main {
+    width: 80%;
+    margin: 2rem auto;
+  }
+}
+
+#sidebar {
+  height: 100%;
+  min-width: 250px;
+  padding: 1rem;
+  background-color: #161313;
+  grid-column: span 3;
+}
+
+#profile {
+  width: 100%;
+  text-align: center;
+  border-bottom: 5px solid #b7e972;
+  padding: 1rem 0;
+}
+#profile img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  border: 5px solid #b7e972;
+  border-radius: 50%;
+}
+
+#contact-icons {
+  grid-template-columns: repeat(2, 4rem);
+}
+
+#stack-icons {
+  grid-template-columns: repeat(3, 4rem);
+}
+
+.fa-brands {
+  font-size: 3rem;
+  color: #adb2b6;
+}
+
+#js-logo {
+  font-size: 3.7rem;
+  margin-top: -5px;
+}
+
+#main-content {
+  grid-column: span 9;
+  height: 100%;
+  background-color: #b7e972;
+  padding: 1.5rem;
+}
+
+.content-container {
+  margin-bottom: 2rem;
+}
+
+.entry-container {
+  border-bottom: 5px solid #161313;
+  padding-block: 1rem;
+}
+
+.right {
+  margin-top: -10px;
+}
+
+.content-icon {
+  font-size: 2rem;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.lowercase {
+  text-transform: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-h2 {
+    color: #b7e972;
+    background-color: #161313;
+  }
+
+  .entry-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding-bottom: 2rem;
+    border: none;
+  }
+
+  .right {
+    margin-top: 0.2rem;
+  }
+
+  .timeline {
+    position: relative;
+    height: 145%;
+  }
+
+  .stylish {
+    border-left: 3px solid #161313;
+    padding-left: 2rem;
+  }
+
+  .main-h4::before {
+    content: "";
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #161313;
+    border-radius: 50%;
+    transform: translateX(-63%);
+    left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

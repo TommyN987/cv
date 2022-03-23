@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;600;900&display=swap');
+@import 'colors';
+
+%heading {
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase;
+}
+
+%side-heading {
+  @extend %heading;
+  color: $primary;
+  text-align: center;
+}
+
+%main-heading {
+  @extend %heading;
+  color: $secondary;
+}
+
+%h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+h1 {
+  @extend %side-heading;
+  font-size: 2.5rem;
+  font-weight: 900;
+  border-top: $border;
+  padding-top: 1rem;
+}
+
+ul {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: $border;
+}
+
+li {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: $muted;
+  margin-bottom: .2rem
+}
+
+.main-h2 {
+  @extend %main-heading;
+  font-size: 2rem;
+  font-weight: 900;
+  position: relative;
+  padding-left: .5rem;
+  margin-bottom: 1rem;
+  color: $primary;
+  background-color: $secondary;
+}
+
+.side-h3 {
+  @extend %side-heading;
+  @extend %h3;
+  padding-top: 1rem;
+}
+
+.main-h3 {
+  @extend %main-heading;
+  @extend %h3;
+  line-height: 1.6rem;
+}
+
+.side-h4 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $muted;
+  text-align: center
+}
+
+.main-h4 {
+  @extend %main-heading;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.4rem;
+  margin-top: .5rem;
+}
+
+.main-h5 {
+  @extend %main-heading;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.main-text {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $secondary;
+  padding-top: .5rem;
+}
+
+.content-icon {
+  font-size: 2rem;
+  margin: .5rem .5rem 0 0;
+
+  &::before {
+    color: $secondary;
+  }
+}
+
