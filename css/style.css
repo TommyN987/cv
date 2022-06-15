@@ -96,6 +96,15 @@ li {
   color: #161313;
 }
 
+.work-experience-li {
+  font-size: 1.2rem;
+  text-transform: none;
+  text-align: left;
+  color: #161313;
+  margin-bottom: 0;
+  list-style: disc;
+}
+
 #stack-icons, #contact-icons {
   display: grid;
   justify-items: center;
@@ -182,7 +191,7 @@ main {
   grid-column: span 9;
   height: 100%;
   background-color: #b7e972;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .content-container {

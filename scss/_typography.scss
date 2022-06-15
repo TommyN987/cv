@@ -109,3 +109,11 @@ li {
   }
 }
 
+.work-experience-li {
+  font-size: 1.2rem;
+  text-transform: none;
+  text-align:left;
+  color: $secondary;
+  margin-bottom: 0;
+  list-style: disc;
+}
